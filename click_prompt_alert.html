@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm_Prompt_Alert</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            row-gap: 1rem;
+        }
+        button{
+            background-color: rgb(245, 26, 209);
+            outline: none;
+            border: none;
+            border-radius: 3rem;
+            height: 3rem;
+            width:10rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn" id="confirmbtn">I am a Confirm Button</button>
+    <button class="btn" id="promptbtn">I am a Prompt Button</button>
+    <button class="btn" id="alertbtn">I am a Alert Button</button>
+
+    <script>
+        const Confirmbutton = document.getElementById("confirmbtn");
+        const promptbutton = document.getElementById("promptbtn");
+        const alertbutton = document.getElementById("alertbtn");
+
+        // Confirmbutton.addEventListener("click", ()=>{
+        //     const confirmation = confirm("Are you sure you want to proceed?");
+        //     if (confirmation) {
+        //         alert("confirmed");
+        //     } else {
+        //         alert('cancelled');
+        //     }
+        // });
+
+        // PromptButton = document.getElementById("promptbtn");
+        // PromptButton.addEventListener("click",() =>{
+        //     let name = prompt("Enter your name: ");
+        //     if (name!==""){
+        //         alert(`Welcome ${name}`);
+        //     } else {
+        //         alert("please enter your name");
+        //     }
+        // });
+
+        // alertbutton.addEventListener("click", ()=>{
+        //     alert ("This is an alert box");
+        // });
+
+        // const buttons = document.querySelectorAll(".btn");
+
+        // buttons.forEach(button => {
+        //     button.addEventListener("click", () => {
+        //         alert("Button Clicked");
+        //     });
+        // });
+
+        const buttons = document.getElementsByClassName("btn");
+        console.log(buttons)
+
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", () => {
+                alert("Button Clicked");
+            });
+        }
+
+    </script>
+</body>
+</html>
+

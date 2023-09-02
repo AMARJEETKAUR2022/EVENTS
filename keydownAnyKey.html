@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>keydown Event Example</title>
+</head>
+<body>
+  <p>Press the any key.</p>
+
+  <script>
+
+    document.addEventListener('keydown', (event)=>{
+        const pressedkey = event.key;
+        // const pressedkey = event.code;
+        alert(`You pressed the ${pressedkey}!`);
+    });
+  </script>
+</body>
+</html>

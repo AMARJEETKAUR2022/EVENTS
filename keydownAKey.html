@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>keydown Event Example</title>
+</head>
+<body>
+  <p>Press the 'B' key.</p>
+
+  <script>
+    // Add an event listener for the 'keydown' event on the document
+    document.addEventListener('keydown', (event)=>{
+        console.log(event.code);
+      // Check if the pressed key's code is for the 'A' key (Key 'A')
+      if (event.code === 'KeyB') {
+        alert("You pressed the 'B' key!");
+        // console.log(event.code);
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+<!-- In this example, the event listener is added to the document object, so it will respond to key presses anywhere on the page. When the 'A' key is pressed, the event's code property is checked to see if it matches the code for the 'A' key (KeyA). If it matches, an alert is shown indicating that the 'A' key was pressed.
+
+You can modify this example to detect other keys by checking their respective key codes. You can find a list of key codes and their corresponding values in the W3C KeyboardEvent code Values documentation. -->

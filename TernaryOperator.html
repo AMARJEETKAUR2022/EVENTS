@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            row-gap: 1rem;
+        }
+        button{
+            background-color: rgb(245, 26, 209);
+            outline: none;
+            border: none;
+            border-radius: 3rem;
+            height: 3rem;
+            width:10rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="confirmbtn">I am a Confirm Button</button>
+    <button id="promptbtn">I am a Prompt Button</button>
+    <button id="alertbtn">I am a Alert Button</button>
+
+    <script>
+        const Confirmbutton = document.getElementById("confirmbtn");
+        const promptbutton = document.getElementById("promptbtn");
+        const alertbutton = document.getElementById("alertbtn");
+
+        Confirmbutton.addEventListener("click", ()=>{
+            const confirmation = confirm("Are you sure you want to proceed?");
+            confirmation ? alert("confirmed") : alert('cancelled')
+        });
+
+        PromptButton = document.getElementById("promptbtn");
+        PromptButton.addEventListener("click",() =>{
+            let name = prompt("Enter your name: ");
+            name!=="" ? alert(`Welcome ${name}`): alert("please enter your name")
+            });
+
+        alertbutton.addEventListener("click", ()=>{
+            alert ("This is an alert box");
+        });
+
+    </script>
+</body>
+</html>
+

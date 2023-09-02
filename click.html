@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Event</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        button{
+            background-color: rgb(245, 26, 209);
+            outline: none;
+            border: none;
+            border-radius: 3rem;
+            height: 3rem;
+            width: 8rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<button class="btn" id ="btn" >I am Button</button>
+<script>
+    // const button = document.querySelector(".buttn");
+    // const button = document.getElementById("btn");
+    // button.addEventListener("click", ()=>{
+    //     alert("Button Clicked");
+    // });
+
+    const buttons = document.getElementsByClassName("btn");
+    buttons.addEventListener("click", ()=>{
+        console.log('clicked');
+    });
+    // for (let i = 0; i < buttons.length; i++) {
+    //     buttons[i].addEventListener("click", () => {
+    //         alert("Button Clicked");
+    //     });
+    // }
+    
+
+</script>
+</body>
+</html>

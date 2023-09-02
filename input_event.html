@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Event Example</title>
+</head>
+<body>
+  <label for="textInput">Type something:</label>
+  <input type="text" id="textInput">
+
+  <!-- <p id="output">You typed: </p> -->
+
+  <script>
+    const textInput = document.getElementById('textInput');
+    // const output = document.getElementById('output');
+
+    // Add an event listener for the 'input' event on the input field
+    textInput.addEventListener('input', (event) => {
+      const typedText = event.target.value;
+    //   output.textContent = `You typed: ${typedText}`;
+    });
+  </script>
+</body>
+</html>

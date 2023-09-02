@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keypress Event Example</title>
+</head>
+<body>
+
+<p>Press any key to see the character.</p>
+<p>Pressed Key: <span id="pressedKey">None</span></p>
+
+<script>
+document.addEventListener("keypress", function(event) {
+  document.getElementById("pressedKey").textContent = event.key;
+});
+</script>
+
+</body>
+</html>
